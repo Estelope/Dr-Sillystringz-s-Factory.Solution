@@ -1,4 +1,4 @@
-# HairSalon
+# Dr SillyStringz's Factory
 MVC application connected to a MySQL database using EF core w/ migrations 
 
  #### By Estevan Lopez
