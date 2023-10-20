@@ -1,7 +1,8 @@
 @{
   Layout = "_Layout";
 }
- @using Factory.Models;
+@using Factory.Models;
+
 <h1>Welcome to Dr SillyStringz Factory</h1>
 
 <hr>
@@ -12,9 +13,9 @@
   <p>No engineers have been added yet!</p>
 } 
 <ul>
-  @foreach (Engineers eng in Model["engineers"])
+  @foreach (Engineer eng in Model["engineers"])
   {
-    <li>@Html.ActionLink(@eng.Name, "Details", "Engineers", new { id = @eng.EngineersId})</li>
+    <li>@Html.ActionLink(@eng.Name, "Details", "Engineers", new { id = @eng.EngineerId})</li>
   }
 </ul>
 
@@ -26,7 +27,7 @@
 <ul>
   @foreach (Machine machine in Model["machines"])
   {
-    <li>@Html.ActionLink(@machine.Description, "Details", "Machines", new { id = @Machine.machineId})</li>
+    <li>@Html.ActionLink(@machine.Name, "Details", "Machines", new { id = @machine.MachineId})</li>
   }
 </ul>
 
