@@ -35,6 +35,7 @@ namespace Factory.Controllers
     public ActionResult Details(int id)
     {
       Machine thisMachine = _db.Machines
+                        
                                 .FirstOrDefault(eng => eng.MachineId == id);
       return View(thisMachine);
     }

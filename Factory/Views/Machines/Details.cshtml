@@ -10,7 +10,7 @@
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 
-@if (Model.JoinEntities.Count == 0)
+@if ( Model.JoinEntities == null || Model.JoinEntities.Count == 0)
 {
   <p>This machine isnt maintained by any engineers.</p>
 }
