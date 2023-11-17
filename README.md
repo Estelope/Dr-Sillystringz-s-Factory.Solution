@@ -21,9 +21,7 @@ The application utilizes the .NET Core MVC framework to create a system for moni
 Git instructions:
 1. Clone this repo.
 2. Open the terminal and navigate to this project's production directory called "Factory".
-3. Within the production directory "Factory", run `dotnet ef database update` in the terminal.
-
- create a new file called `appsettings.json`.
+3. Within the production directory "Factory"create a new file called `appsettings.json`. 
 4. Within `appsettings.json`, put in the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL. 
 
 ```json
@@ -33,9 +31,9 @@ Git instructions:
   }
 }
 ```
-
-5. Within the production directory "Factory", run `dotnet watch run` in the command line to start the project in development mode with a watcher.
-4. Open the browser to _https://localhost:5001_. If you cannot access localhost:5001 it is likely because you have not configured a .NET developer security certificate for HTTPS. 
+5. Within the production directory "Factory", run `dotnet ef database update` in the terminal.
+6. Within the production directory "Factory", run `dotnet watch run` in the command line to start the project in development mode with a watcher.
+7. Open the browser to _https://localhost:5001_. If you cannot access localhost:5001 it is likely because you have not configured a .NET developer security certificate for HTTPS. 
 
 ## Known Bugs
 
